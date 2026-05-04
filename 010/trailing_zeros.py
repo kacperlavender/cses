@@ -1,13 +1,8 @@
-import math
-
 n = int(input())
+c = 0
 
-fact = math.factorial(n)
+while n > 0:
+    n //= 5
+    c += n
 
-t = 0
-
-while fact % 10 == 0:
-    t = t + 1
-    fact = fact // 10
-
-print(t)
+print(c)
